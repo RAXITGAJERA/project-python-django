@@ -1,0 +1,245 @@
+.ma
+{
+    width: 100%;
+    height: 50px;
+    float: left;
+}
+
+.p
+{
+    font-weight: bold;
+    float: left;
+    width: 42%;
+    margin-left: 4%;
+}
+.search
+{
+    float: left;
+    font-weight: bold; 
+    width: 30%;
+    height: 30px; 
+    margin-top: 10px; 
+    margin-bottom: 10px;
+    padding-left: 20%;
+    text-align: center;
+}
+.search label
+{
+    width: 20%;
+}
+.search input
+{
+    width: 70%;
+    height: 90%;
+}
+.th
+{
+    width: 92%;
+    height: 7%;
+    margin: 0px 4%;
+    color: white;
+    font-weight: bold;
+    float: left;
+    background-color: rgba(105, 105, 105, 0.949);
+}
+.fa-stack 
+{
+    width: 2%;
+    margin-top: 0px;
+    padding-right: 5px;
+    float: left;
+}
+.fa-stack .fa-caret-down 
+{
+    position: absolute;
+    bottom: 9px;
+    color: white;
+}
+.fa-stack .fa-caret-up 
+{
+    position: absolute;
+    color: white;
+}
+
+.f
+{
+    width: 6%;
+    padding: 1% 0%;
+    text-align: center;
+    float: left;
+}
+.f i
+{
+
+    width: 25%;
+    padding: 1% 0%;
+    float: right;
+    color: rgba(30, 143, 255, 0.974);
+}
+.pname
+{
+    width: 39%;
+    padding: 1% 0%;
+    padding-left: 2%;
+    float: left;
+}
+.sta
+{
+    width: 25%;
+    padding: 1% 0%;
+    padding-left: 1%;
+    float: left;
+    
+}
+.actions
+{
+    width: 22%;
+    padding: 1% 0%;
+    padding-left: 2%;
+    float: left;
+}
+.tr
+{
+    width: 92%;
+    margin-top: 8px;
+    height: 70%;
+    font-size: 15px;
+    margin-left: 4%;
+    border-bottom: 1px;
+    float: left;
+   
+}
+.pdata
+{
+    border-bottom: 1px solid;
+    border-color: rgb(97, 82, 82);
+    margin-right: 5px;
+    margin-bottom: 9px;
+    padding-bottom: 5px;
+    float: left;
+    width: 100%;
+    display:inline-flex;
+    
+
+}
+.apid
+{
+    width: 6%;
+    padding: 1% 0%;
+    text-align: center;
+    float: left;
+}
+.apname
+{
+    width: 31%;
+    padding: 1% 0%;
+    padding-left: 2%;
+    float: left;
+}
+.apsname
+{
+    width: 20%;
+    padding: 1% 0%;
+    padding-left: 10%;
+    float: left;
+
+}
+.aedt
+{
+    width: 24%;
+    padding: 1% 0%;
+    padding-left: 7%;
+    float: left;
+}
+
+.aedt #ae
+{
+    margin-right: 2px;
+    text-decoration: none;
+}
+.aedt #ad
+{
+    margin-left: 2px;
+    text-decoration: none;
+}
+hr
+{
+	width:1050px;
+    margin-left: 40px;
+	color: black;
+}
+.next a
+{
+    color:rgb(168, 172, 175);
+    font-weight: normal;
+    text-decoration: none;
+} 
+.next a tr 
+{
+    padding: 20px 50px;
+    border: 5px solid;
+} 
+.next a:hover
+{
+    color:rgb(168, 172, 105);
+    font-weight: normal;
+    text-decoration: none;
+    color:black;
+} 
+.next
+{
+    margin-left: 920px;
+    text-decoration: none;
+    display: inline;
+    margin-top: 10px;
+    color: rgba(0, 0, 0, 0.878);
+    font-weight: normal;
+}
+.pagination
+{
+    text-decoration: none;
+    display: inline;
+    margin-top: 10px;
+    color: rgba(0, 0, 0, 0.878);
+    font-weight: normal;
+    float: right;
+    width: 200px;
+}
+.pagination li
+{
+    text-decoration: none;
+    display: inline;
+    color: rgba(0, 0, 0, 0.878);
+    font-weight: normal;
+    margin: 5px 2px;
+}
+.pagination li a
+{
+    text-decoration: none;
+    font-size: large;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.pagination label
+{
+    padding: 5px 10px;
+    border: 1px solid;
+}
+.disabled
+{
+    color:rgb(168, 172, 175);
+    font-weight: normal;
+    text-decoration: none;
+}
+.entries
+{   
+    float: left;
+}
+.entries p
+{
+    margin-top: 0px;
+    color: rgba(0, 0, 0, 0.899);
+    font-weight: normal;
+    background-color: rgb(177, 103, 103);    
+    margin-right: 2px;
+}

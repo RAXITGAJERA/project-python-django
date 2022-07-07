@@ -1,0 +1,49 @@
+{% load widget_tweaks %}
+{% load static %}
+<html lang="en">
+<head>
+    <title>Registration</title>
+    <link rel="stylesheet" href="{% static 'css/styleregistratios.css' %}">
+</head>
+<body class="body">
+    <h2 align="center">
+        {% if msg %}
+          {{msg}}
+        {% endif %}
+    </h2>
+    <form action = '/signup' method="post">
+        {% csrf_token %}
+        <div class="div">
+            <div class="aa">
+                <h3><p> Vedansh</p></h3>
+            </div>
+            <div class="aa">
+                <a href="{% url 'logins' %}">All Ready Registration</a>
+            </div>
+            <div class="aa"> 
+                <input type="text" class="form-control" id="username" name="username" placeholder="Choose a unique username" required>
+            </div>
+            <div class="aa"> 
+                <input type="text" class="form-control" id="fname" name="fname" placeholder="First Name" required>
+            </div>
+            <div class="aa"> 
+                <input type="text" class="form-control" id="lname" name="lname" placeholder="Last Name" required>
+            </div>
+            <div class="aa"> 
+                <input type="email" class="form-control"  id="email" name="email" placeholder="  Enter your email" required>
+            </div>
+            <div class="aa"> 
+                <input type="password" class="form-control"  id="pass1" name="pass1" placeholder="Choose your password" required>
+            </div>
+            <div class="aa"> 
+                <input type="password" class="form-control"  id="pass2" name="pass2" placeholder="Enter your password again" required>
+            </div>
+            <div class="aa">
+                <button type="submit">New Registration</button>
+            </div>
+        </div>
+        <div class="c">
+            <p>&copy;2017 Vedansh</p>
+        </div>
+</body>
+</html>

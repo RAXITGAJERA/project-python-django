@@ -1,0 +1,60 @@
+{% extends 'usersite/master.html' %}
+{% load static %}
+{% block 'edi' %}
+
+<form method="GET" action="{% url 'searchpage' %}">
+    <div class="ma">
+        <div class="search">
+            <label type="submit ">Search: <input type="text" id="query" name="q" ></label>
+        </div> 
+    </div>
+</form>
+        
+<div class="th">
+    <label for="#" class="f"># <i class="fa fa-caret-up"></i></label>
+    <label for="product" class="pname">Product Name</label>
+    <label for="status" class="sta">
+        <span class="fa fa-stack">
+            <i class="fa fa-caret-down" aria-hidden="true"></i>
+            <i class="fa fa-caret-up" aria-hidden="true"></i>
+        </span>Status
+    </label>
+    <label for="actions" class="actions">
+        <span class="fa fa-stack">
+            <i class="fa fa-caret-down" aria-hidden="true"></i>
+            <i class="fa fa-caret-up" aria-hidden="true"></i>
+        </span>Actions
+    </label>
+</div> 
+
+<div class="tr">
+    {% for x in sel %}
+        <label class="pdata"> 
+            <label class="apid">{{ x.id }}</label>
+            <label class="apname">{{ x.product_name }}</label>
+            <label class="apsname">{{ x.Product_status }}</label> 
+            <label class="aedt">
+                <a id="ae" href="{% url 'editproductspage' x.id %}">Edit</a>|
+                <a  id="ad" href="{% url 'deleteproducts' x.id %}">Delete</a>
+            </label>
+        </label>
+    {% endfor %}
+</div>        
+
+<hr>
+        
+
+
+{% endblock %}
+{% block 'title' %}
+    Products
+{% endblock %}
+{% block 'link' %}
+    rel="stylesheet" href="{% static 'css/searchproduct.css' %}"
+{% endblock %}
+{% block 'name' %}
+Search Results Products
+{% endblock %}
+{% block 'back' %}
+<a class="addproduct" href="{% url 'product' %}">Back Page</a>
+{% endblock %}

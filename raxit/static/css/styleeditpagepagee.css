@@ -1,0 +1,197 @@
+.ma
+{
+    width: 100%;
+    height: 50px;
+}
+#int
+{
+    width: 65px;
+    height: 30px;
+    border-radius: 0px; 
+    font-size: 15px;
+    font-weight: bold;
+}
+p
+{
+    margin-left: 40px;
+    font-weight: bold;
+    position: absolute;
+}
+.search
+{
+    float: right;
+    margin-left: 830px;
+    margin-top: 25px;
+    font-weight: bold;  
+    position: absolute; 
+}
+.seain
+{
+    margin-left: 890px;
+    margin-top: 20px;
+    position: absolute;    
+}
+input[type=search]
+{
+    height: 30px;
+    width: 200px;
+}
+.th
+{
+    width: 93%;
+    height: 50px;
+    background-color: rgba(105, 105, 105, 0.949);
+    margin-top: 3px;
+    margin-bottom: 0px;
+    margin-left: 40px;
+    margin-right: 40px;
+    color: white;
+    font-weight: bold;
+    float: left;
+    scroll-snap-align: center;
+}
+.fa-stack 
+{
+    text-align: center;
+    margin-right: 10px;
+}
+.fa-stack .fa-caret-down 
+{
+    position: absolute;
+    bottom: 9px;
+    color: white;
+}
+.fa-stack .fa-caret-up 
+{
+    position: absolute;
+    color: white;
+    top: 0;
+}
+
+.f
+{
+    margin-left: 30px;
+}
+.f i
+{
+    margin-left: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: rgba(30, 143, 255, 0.974);
+}
+.pname
+{
+    margin-left: 15px;
+}
+.sta
+{
+    margin-left: 300px;
+    
+}
+.actions
+{
+    margin-left: 200px;
+
+}
+.tr
+{
+    width: 1080px;
+    height: 200px;
+    font-size: 15px;
+    margin-left: 40px;
+    padding-bottom: 0px;
+    border-bottom: 1px;
+    float: left;
+    position: relative;
+    overflow-y:scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    
+}
+.pdata
+{
+    border-bottom: 1px solid;
+    border-color: rgb(102, 63, 63);
+    margin-right: 5px;
+    margin-bottom: 9px;
+    padding-bottom: 5px;
+    float: left;
+    width: 1050px;
+    display:inline-flex;
+    
+
+}
+.apid
+{
+    width: 30px;
+    margin-left: 30px;
+    float: left;
+}
+.apname
+{
+    width: 150px;
+    margin-left: 20px;
+    float: left;
+}
+.apsname
+{
+    margin-left: 300px;
+    width: 70px;
+    float: left;
+    text-align: center;
+
+}
+.aedt
+{
+    margin-left: 230px;
+    float: left;
+}
+
+.aedt #ae
+{
+    margin-right: 2px;
+    text-decoration: none;
+}
+.aedt #ad
+{
+    margin-left: 2px;
+    text-decoration: none;
+}
+hr
+{
+	width:1050px;
+    margin-left: 40px;
+	color: black;
+}
+.next a
+{
+    color:rgb(168, 172, 175);
+    font-weight: normal;
+    text-decoration: none;
+} 
+.next a tr 
+{
+    padding: 20px 50px;
+    border: 5px solid;
+} 
+.next a:hover
+{
+    color:rgb(168, 172, 105);
+    font-weight: normal;
+    text-decoration: none;
+    color:black;
+} 
+.next
+{
+    margin-left: 920px;
+    margin-top: 10px;
+    color: rgba(0, 0, 0, 0.878);
+    font-weight: normal;
+}
+.entries p
+{
+    margin-top: 10px;
+    color: rgba(0, 0, 0, 0.899);
+    font-weight: normal;
+    
+}

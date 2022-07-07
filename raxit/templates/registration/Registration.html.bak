@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>
+            sign in
+        </title>
+        <link rel="stylesheet" href="style1.css">
+    </head>
+    <body>
+        <form method="POST">
+            <div class="log">
+                <table border-style: inset;>
+                <tr>
+                    <th colspan="2">Vedansh</th>
+                </tr>
+                <tr>
+                    <td><input value="Enter your username" name="username"></td>
+                </tr>
+                <tr>
+                    <td><input value="Enter your email" name="email"></td>
+                </tr>
+                <tr>
+                    <td><input value="Enter your password" name="password"></td>
+                </tr>
+                <tr>
+                    <th colspan="1" align="center"><input type="submit" value="New Registration" name="submit"></th>
+                </tr>
+                <tr>
+                    <th colspan="1" align="center"><input type="submit" value="All Ready Registr" name="submit"></th>
+                </tr>
+            </table>
+            </div>   
+            <h4>&copy; 2022 Vedansh</h4>
+        </form>
+    </body>
+</html>

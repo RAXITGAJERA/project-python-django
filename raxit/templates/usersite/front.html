@@ -1,0 +1,101 @@
+{% load static %}
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <title>
+            My website
+        </title>
+        <link rel="stylesheet" href="{% static 'css/stylefron.css' %}">
+    </head>
+    <body>
+        <h2 align="center">
+            {% if msg %}
+              {{msg}}
+            {% endif %}
+        </h2>
+        <div class="header">
+            <h2><span>Ved</span>ansh</h2>
+            <ul>
+                <a href="#">Home</a>
+                <a href="#">About Us</a>
+                <a href="#" class="active">Products</a>
+                <a href="#">Tech Tip</a>
+                <a href="#">Contact</a>
+                <a href="{% url 'logins' %}">Login</a>
+            </ul>
+        </div>
+
+        <div class="pt">
+            <h2>Products</h2>
+            <ul>
+                <a href="#">Home</a> /
+                <a href="#"  class="active">Products</a>
+            </ul>  
+        </div>
+
+        <div class="main">
+            {% for x in sel %}          
+            <input name="myid" value="{{ x.product_name }}">
+            <h2></h2>
+            <div class="m1">
+                <div class="obj">
+                    <object data="{{ x.youtube_link }}"></object>
+                </div>
+                <div class="paa">
+                    <p>{{ x.product_disc }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+        <div class="footer">
+
+            <div class="about">
+                <h3>About us</h3>
+                <p>
+                    Vedansh is uisque ligulas ipsum, euismod atras vulputate Praesent a ligula in urna consectetur rhoncus. Vedansh is uisque ligulas ipsum,euismod atras 
+                    vulputate praesent a ligula in urna consectetur ehoncus.
+                </p>
+            </div>
+
+            <div class="news">
+                <h3>Newsletter</h3>
+                <p>Duis nisl esl, porta eu augue et, tempor congue mauris,</p>
+                <form method="POST" action="{% url 'contectusemail' %}">
+                    {% csrf_token %}
+                    <table class="emai">
+                        <tr>
+                            <td>
+                                <input type="text" placeholder ="Enter your email" name="email">
+                                <input type="submit" value="ok">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+
+            <div class="soci">
+                <h3>Social Touch </h3>
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-google"></a>
+            </div>
+
+            <div class="getin">
+                <h3>Get In Touch</h3>
+                <p><i class="material-icons">home</i>business park,sarkhej sanand road,
+                    sarkhej circle,Ahmedabad,Gujarat 
+                    382210</p>
+                <p><i class="material-icons">phone</i>+91 1234567890</p>
+                <p><i class="material-icons">email</i>info@vedansh.com</p>
+            </div>
+
+            <div class="rese">
+                <h4>&copy; 2022 <span class="ve">vedansh</span> All Right Reserved. </h4>
+            </div>
+        </div>     
+    </body>
+</html>

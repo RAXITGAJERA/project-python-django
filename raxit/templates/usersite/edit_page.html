@@ -1,0 +1,60 @@
+{% extends 'usersite/master.html' %}
+{% load static %}
+{% block 'edi' %}
+<P id="f">Field marked with <a class="arc">*</a> are mandatory</P>
+    <div class="sss">
+        <form action={% url 'updatepage' %} method="POST">
+        {% csrf_token %}
+        <div class="row1">
+            <tr>
+                <input type="hidden" name="myid" value="{{ sel.id }}">
+            </tr> 
+            <div class="col-25">
+                <label for="pname">Page Title:<a class="a">*</a></label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="page_title" name="page_title" value="{{ sel.page_title }}" required>
+            </div>
+        </div>
+        <div class="row2">
+            <div class="col-25">
+                <label for="Product Discription">Page Content:<a class="a">*</a></label>
+            </div>
+            <div class="col-75">
+                <textarea id="page_content" name="page_content" required>{{ sel.page_content }}</textarea>
+            </div>
+        </div>
+        <div class="row3">
+            <div class="col-25">
+                <label for="country">Page Status:<a class="a">* </a></label>
+            </div>
+            <div class="col-76">
+                <select id="Page_status" name="Page_status">
+                    <option value="Active" required>{{ sel.Page_status }}</option>
+                    <option value="Active">Active</option>
+                    <option value="Published">Published</option>
+                </select>
+            </div>
+        </div>
+        <br>
+        <div class="row4">
+            <button class="submit" type="submit">Update</button>
+            <a class="reset" href="{% url 'pagespage' %}">cancel</a>
+        </div>
+    </form>
+</div>
+<script src="{% static 'ckeditor/ckeditor.js' %}"></script>
+<script>
+    CKEDITOR.replace('page_content');
+</script>
+
+{% endblock %}
+{% block 'title' %}
+    Add Products
+{% endblock %}
+{% block 'link' %}
+    rel="stylesheet" href="{% static 'css/editpagee.css' %}"
+{% endblock %}
+{% block 'name' %}
+ Edit Pages
+{% endblock %}

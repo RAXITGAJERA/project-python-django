@@ -1,0 +1,62 @@
+{% extends 'usersite/master.html' %}
+{% load static %}
+{% block 'edi' %}
+
+<P id="f">Field marked with <a class="arc">*</a> are mandatory</P>
+    <div class="sss">
+        <form action="/addproducts" method="post">
+        {% csrf_token %}
+        <div class="row">
+            <div class="col-25">
+                <label for="pname">Product Name:<a class="a">*</a></label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="product_name" name="product_name" placeholder="Product Name" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="Product Discription">Product Discription:</label>
+            </div>
+            <div class="col-75">
+                <textarea id="product_disc" name="product_disc" placeholder="Product Discription" style="height:150px" required></textarea>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="lname">YouTube Link:</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="youtube_link" name="youtube_link" placeholder="YouTube Link:" required>
+                <p id="p">https://www.youtube.com/embed/3o8nBBeRV24</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="country">Product Status:<a class="a">* </a></label>
+            </div>
+            <div class="col-75">
+                <select id="Product_status" name="Product_status">
+                    <option value="Active" required>Select Product Status</option>
+                    <option value="Active">Active</option>
+                    <option value="Published">Published</option>
+                </select>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <button class="submit" type="submit">Add</button>
+            <a class="reset" href="{% url 'product' %}">cancel</a>
+        </div>
+    </form>
+</div>
+{% endblock %}
+{% block 'title' %}
+    Add Products
+{% endblock %}
+{% block 'link' %}
+    rel="stylesheet" href="{% static 'css/addproducts.css' %}"
+{% endblock %}
+{% block 'name' %}
+Add Products
+{% endblock %}
